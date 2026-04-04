@@ -1,4 +1,4 @@
-< !DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Queen Karin — Femdom &amp;
+< !DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /><title>Queen Karin — Femdom &amp;
 
 Online Dominance | qkarin.com</title><link rel="canonical" href="https://qkarin.com/" /><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,600&family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet" /><style>*,
 *::before,
@@ -6,6 +6,18 @@ Online Dominance | qkarin.com</title><link rel="canonical" href="https://qkarin.
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    min-width: 0;
+}
+
+html {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
 }
 
 :root {
@@ -31,7 +43,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     line-height: 1.8;
-    overflow-x: hidden;
 }
 
 /* ── 3D REVEAL ── */
@@ -1157,6 +1168,26 @@ footer {
 
 /* ── RESPONSIVE ── */
 @media (max-width:768px) {
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    section, nav, footer, .disclaimer, .partner-banner {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    img, svg, table, iframe, embed, video {
+        max-width: 100%;
+    }
+
+    .partner-banner img {
+        width: 100%;
+        height: auto;
+    }
+
     section {
         padding: 4.5rem 5%;
     }
